@@ -1,0 +1,3 @@
+#!/bin/bash
+#gamCombFit --nCores ${NCORES-12} --DataSample ${BESIIISAMPLE-besiii0poly_0.root} --BDataSample ${LHCBSAMPLE-lhcb0poly_0.root} --NInt 100000 --EventType "D0 K0S0 pi- pi+" --LogFile ${LOGFILE-Fit.log} --Plots ${PLOTFILE-Fit.root} ${MODEL-poly_0.opt}
+valgrind --tool=callgrind --dump-instr=yes -v --instr-atstart=no $AMPGENROOT/install/bin/BESIIILHCbKspipi --nCores ${NCORES-12} --BESIIIDataSample ${BESIIISAMPLE-besiii0poly_0.root} --LHCbDataSample ${LHCBSAMPLE-lhcb0poly_0.root} --EventType "D0 K0S0 pi- pi+" --LogFile ${LOGFILE-Fit.log} --NInt 100000 --Plots ${PLOTFILE-Fit.root} ${MODEL-poly_0.opt} #2>&1 > ${LOGFILE-Fit.log}.stdout

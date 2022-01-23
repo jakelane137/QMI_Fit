@@ -1,0 +1,5 @@
+*.root
+*.stdout
+*.pickle
+*.png
+__pycache__

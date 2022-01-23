@@ -1,0 +1,3 @@
+#!/bin/bash
+QcGen2 --nCores ${NCORES-12} --nEvents ${BESIIINEVENTS-1} --Seed ${SEED-0} --Output ${BESIIIOUTPUT-besiii$SEED$MODEL.root} --EventType "D0 K0S0 pi- pi+" ${MODEL-model.opt} 2>&1 > ${BESIIIGENLOG-besiii$SEED$MODEL.stdout}
+gammaGen --nCores ${NCORES-12} --nEvents ${LHCBNEVENTS-10000} --Seed ${SEED-0} --Output ${LHCBOUTPUT-lhcb$SEED$MODEL.root} --EventType "D0 K0S0 pi- pi+" ${MODEL-model.opt} 2>&1 > ${LHCBGENLOG-lhcb$SEED$MODEL.stdout}
